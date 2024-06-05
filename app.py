@@ -4,7 +4,7 @@ from urllib.parse import urljoin
 
 from config import app_settings
 import streamlit as st
-from pydantic import AnyHttpUrl, BaseModel, Field
+from pydantic import BaseModel, Field
 
 class CandidateProduct(BaseModel):
     title: str
@@ -42,7 +42,7 @@ def get_candidates(product_url, location):
     )
 
     response = requests.post(
-        url=urljoin(app_settings.app_server, "/recommend-products/"), 
+        url=urljoin(app_settings.app_server, "/recommend-products-location/"), 
         auth=HTTPBasicAuth(app_settings.app_username, app_settings.app_password),
         json=payload.model_dump()
     )
