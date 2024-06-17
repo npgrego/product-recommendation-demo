@@ -75,7 +75,7 @@ def prepare_recommended_product_offer(google_product_offer: GoogleShoppingProduc
     )
 
 
-def get_recommended_products(query:str, location:str, debug_mode: bool):
+def get_recommended_products(query:str, location:str, debug_mode: bool) -> list[RecommendedProduct]:
     if debug_mode:
         with open("./example-shopping-products.json", "r") as fp:
             shopping_search_result = GoogleShoppingResponse(**json.load(fp))
@@ -83,12 +83,10 @@ def get_recommended_products(query:str, location:str, debug_mode: bool):
     else:
         google_products = GoogleClient().get_products(query=query, location=location)
     
-    st.session_state["recommended_products"] = [prepare_recommended_product(google_product=gp, location=location) for gp in google_products]
-    # clean offers
-    st.session_state["recommended_product_offers"] = []
+    return [prepare_recommended_product(google_product=gp, location=location) for gp in google_products]
 
 
-def get_recommended_product_offers(product_id:str, location:str, debug_mode: bool):
+def get_recommended_product_offers(product_id:str, location:str, debug_mode: bool) -> list[RecommendedProductOffer]:
     
     if debug_mode:
         with open("./example-shopping-product-offers.json", "r") as fp:
@@ -97,7 +95,16 @@ def get_recommended_product_offers(product_id:str, location:str, debug_mode: boo
     else:
         google_product_offers = GoogleClient().get_product_offers(product_id=product_id, location=location)
 
-    st.session_state["recommended_product_offers"] = [prepare_recommended_product_offer(google_product_offer=gpo, location=location) for gpo in google_product_offers]
+    return [prepare_recommended_product_offer(google_product_offer=gpo, location=location) for gpo in google_product_offers]
+    
+
+def get_more_offers_on_click(product_id:str, location:str, debug_mode: bool):
+    st.session_state["recommended_product_offers"] = get_recommended_product_offers(
+        product_id=product_id,
+        location=location,
+        debug_mode=debug_mode
+    )
+
 
 # PARSE REQUSTED product URL
 def parse_product(product_url):
@@ -196,7 +203,9 @@ def show():
     location = st.radio("Location", options=list(LOCATION_DESCRIPTION.keys()), horizontal=True)
 
     if st.button("Get Products", disabled=not query):
-        get_recommended_products(query=query, location=location, debug_mode=debug_mode)
+        st.session_state["recommended_products"] = get_recommended_products(query=query, location=location, debug_mode=debug_mode)
+        # clean offers
+        st.session_state["recommended_product_offers"] = []
 
     recommended_product_offers_expanded = bool(st.session_state["recommended_product_offers"])
     recommended_products_expanded = bool(st.session_state["recommended_products"]) and not recommended_product_offers_expanded
@@ -214,7 +223,28 @@ def show():
     if st.session_state["recommended_product_offers"]:
         show_recommended_product_offers(product_offers_container)
 
-    
+    with st.expander("API payload examples", expanded=False):
+        st.write("### getProducts")
+        st.info("{'query':'nike air max 1','location': 'en'}")
+        st.write(
+            {
+                "filters": {
+                    "TBD": "TBD"
+                },
+                "products":[p.model_dump(mode="json") for p in get_recommended_products(query="", location="en", debug_mode=True)]
+            }
+        )
+
+        st.write("### getProductOffers")
+        st.info("{'product_id':'123456','location': 'en'}")
+        st.write(
+            {
+                "product": {
+                    "TBD": "Extended product info"
+                },
+                "offers":[p.model_dump(mode="json") for p in get_recommended_product_offers(product_id="", location="en", debug_mode=True)]
+            }
+        )
 
 if __name__ == "__main__":
     show()
