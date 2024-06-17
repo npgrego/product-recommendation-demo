@@ -3,6 +3,7 @@ import requests
 import streamlit as st
 from datetime import date
 from pydantic import BaseModel
+from price_parser import parse_price, Price
 
 CURRENCY_UAH = "UAH"
 CURRENCY_EUR = "EUR"
@@ -95,3 +96,22 @@ def get_price_currency(price: str, location:str) -> str:
         currency = LOCATION_DEFAULT_CURRENCY[location]
 
     return currency
+
+def extract_price_currency(price: str, location:str) -> tuple[float,str]:
+
+    if not price:
+        return None, None
+    
+    parsed_price: Price = parse_price(price=price)
+
+    currency = None
+
+    for repr, iso_cur in REPR_CURRENCY.items():
+        if repr in parsed_price.currency.lower():
+            currency = iso_cur
+            break
+
+    if not currency:
+        currency = LOCATION_DEFAULT_CURRENCY[location]
+
+    return float(parsed_price.amount), currency

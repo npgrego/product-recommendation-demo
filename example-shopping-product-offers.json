@@ -1,0 +1,547 @@
+{
+    "search_metadata": {
+      "id": "66685d489b6472c608503b24",
+      "status": "Success",
+      "json_endpoint": "https://serpapi.com/searches/bb8c84d841229b93/66685d489b6472c608503b24.json",
+      "created_at": "2024-06-11 14:20:56 UTC",
+      "processed_at": "2024-06-11 14:20:56 UTC",
+      "google_product_url": "https://www.google.com/shopping/product/7790597859974711893?uule=w+CAIQICIlRWFzdCBIYW5vdmVyLE5ldyBKZXJzZXksVW5pdGVkIFN0YXRlcw&gl=us&hl=en&prds=pid:7790597859974711893&sourceid=chrome&ie=UTF-8",
+      "raw_html_file": "https://serpapi.com/searches/bb8c84d841229b93/66685d489b6472c608503b24.html",
+      "total_time_taken": 3.24
+    },
+    "search_parameters": {
+      "engine": "google_product",
+      "product_id": "7790597859974711893",
+      "location_requested": "East Hanover, New Jersey, United States",
+      "location_used": "East Hanover,New Jersey,United States",
+      "google_domain": "google.com",
+      "hl": "en",
+      "gl": "us",
+      "device": "desktop"
+    },
+    "product_results": {
+      "product_id": "7790597859974711893",
+      "title": "Nike Air Max 1 Medium Olive White/Black, 8",
+      "prices": [
+        "$86.97",
+        "$109.99",
+        "$85.00"
+      ],
+      "conditions": [
+        "New",
+        "New",
+        "New"
+      ],
+      "typical_prices": {
+        "low": "$86.97",
+        "high": "$140.00",
+        "shown_price": "$86.97 at Nike"
+      },
+      "reviews": 794,
+      "rating": 4.7,
+      "extensions": [
+        "Men's",
+        "8",
+        "Genuine Leather",
+        "Genuine Suede",
+        "Mesh",
+        "Rubber",
+        "White/Pure Platinum/Medium Olive/Black",
+        "Running",
+        "Casual",
+        "For Athletics"
+      ],
+      "description": "The Nike Air Max 1 White Black Medium Olive pays homage to the original Air Max 1, introduced in 1987, but with a modern twist in a color combination of white, black, Pure Platinum, and Medium Olive. The upper of the White Black Medium Olive Nike Air Max 1 is predominantly crafted from Crisp White mesh, accentuated by Pure Platinum overlays and a black Swoosh logo. Synthetic suede overlays in Pure Platinum adorn the white mesh base. Touches of olive green can be observed in the textile lining and synthetic suede mudguard, in addition to the stitched Nike Air logo located on the rear heel. The white PU midsole contains a visible Air-sole unit in the heel, guaranteeing a comfy stride. Additionally, the shoe features a two-toned black and white rubber outsole. The standout element of the Nike Air Max 1 White Black Medium Olive is the exposed Air-sole unit in the heel, providing enduring comfort and making the shoe an excellent choice for both athletic activities and casual wear. The sneaker debuted for $140 on October 12th, 2023.",
+      "media": [
+        {
+          "type": "image",
+          "link": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcT8i5bHXrbcQNuCadNYaOI_eDFDJTUwUfztTvz1T_7vA3YtKc5d2S_ECr8hNBTr4sYmGHX5o5l8lTMTeZotT5LfUQwjMIwM&usqp=CAY"
+        },
+        {
+          "type": "image",
+          "link": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQ5I_ZYGK-GHyxqQ3nYtXq2ShfsOnV2WyBjujH8BGDWRoh_eM8hOs2cFGMsWzd1BDgZfDTKq_Crge3M4eGUkQLVY69ZgR8y&usqp=CAY"
+        },
+        {
+          "type": "image",
+          "link": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRlh4Zl97xbrbbkJ2hwCwn09Xy5YOgO4vMcuQyDanWEfnwTd-kYBrfa442nlFCBur3HSwGVJBfWn8-wqie9N1uTMLTo5BbKuA&usqp=CAY"
+        },
+        {
+          "type": "image",
+          "link": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRE_DH-i2fSlcOGhMuDnYvRiAfCRNaSYSS3CqQQayT3ZS_z0ocO9JTBiKutVftTyay7iKFZGNXqix6e6DS8sHVkezQGfuaa&usqp=CAY"
+        },
+        {
+          "type": "image",
+          "link": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcS3R2a2I-ZU8fvpX5Y_O2HTt7g3AmO6l2-DyEzDrKMgaEyZd9e4lwaFT61KmLLNTGfOWKbi5lTE6AT0lKf8y3-9PfCtz3ed&usqp=CAY"
+        },
+        {
+          "type": "image",
+          "link": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQzm73KdjUhem7u7uA_ddyvucofw7cP_v42uUq2Xu5OcnMOfd9c4MGeLYLURe3yxAKbBlJ1k9Y_uVh3GRDwVvHWUmYr87bY&usqp=CAY"
+        },
+        {
+          "type": "image",
+          "link": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTYEpSzNj27924GQf_98J33DP6EGvr1-oiKK4ung977ByJ8eTcexdtFRJvpNixKpQBDghMvRVaGD4Odw_RZJ2AHf_PSqVsrRg&usqp=CAY"
+        },
+        {
+          "type": "image",
+          "link": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcS-3l5AVZ0BC3iOSKz49iC0lwyXCwEj0ngEhb7I7l6qHn5BvtEyoFDh6FGpj8drkmx2JL92EKqSySyBfVhf7CjDJL5WitHUzA&usqp=CAY"
+        },
+        {
+          "type": "image",
+          "link": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcT2BSfQcXBDg9mKXI_88ENyts8Ymtv-0dI7wHAWDNo1_-vbtCyjquk28kuGTtRvnOiCFxwK4RZewW-FUeY458Rps9eBXnmceQ&usqp=CAY"
+        },
+        {
+          "type": "image",
+          "link": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcT4W_jJVlZ6yPewm9PijS9suUy8Xcbs9vi5NoN_whV1xOymvsua_kAEl8TOLrgUQHclkxk1eeYv47rbjng1OysQL6QfxFRD&usqp=CAY"
+        }
+      ],
+      "sizes": {
+        "8": {
+          "link": "https://www.google.com/shopping/product/7790597859974711893?uule=w+CAIQICIlRWFzdCBIYW5vdmVyLE5ldyBKZXJzZXksVW5pdGVkIFN0YXRlcw&gl=us&hl=en&prds=pid:7790597859974711893&sourceid=chrome&ie=UTF-8",
+          "product_id": "7790597859974711893",
+          "selected": true,
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_product&gl=us&google_domain=google.com&hl=en&location=East+Hanover%2C+New+Jersey%2C+United+States&product_id=7790597859974711893"
+        },
+        "4": {
+          "link": "https://www.google.com/shopping/product/4993689054980451396?gl=us&hl=en&sourceid=chrome&ie=UTF-8&uule=w+CAIQICIlRWFzdCBIYW5vdmVyLE5ldyBKZXJzZXksVW5pdGVkIFN0YXRlcw&prds=opd:16119795782574640788,rsk:PC_13869865457259445042&sa=X&ved=0ahUKEwjd2q_M39OGAxXLKFkFHSbrAQ4QlIUHCE0oAA",
+          "product_id": "4993689054980451396",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_product&gl=us&google_domain=google.com&hl=en&location=East+Hanover%2C+New+Jersey%2C+United+States&product_id=4993689054980451396"
+        },
+        "4½": {
+          "link": "https://www.google.com/shopping/product/12169178645981711341?gl=us&hl=en&sourceid=chrome&ie=UTF-8&uule=w+CAIQICIlRWFzdCBIYW5vdmVyLE5ldyBKZXJzZXksVW5pdGVkIFN0YXRlcw&prds=opd:16119795782574640788,rsk:PC_13869865457259445042&sa=X&ved=0ahUKEwjd2q_M39OGAxXLKFkFHSbrAQ4QlIUHCE4oAQ",
+          "product_id": "12169178645981711341",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_product&gl=us&google_domain=google.com&hl=en&location=East+Hanover%2C+New+Jersey%2C+United+States&product_id=12169178645981711341"
+        },
+        "5": {
+          "link": "https://www.google.com/shopping/product/8958653994533051336?gl=us&hl=en&sourceid=chrome&ie=UTF-8&uule=w+CAIQICIlRWFzdCBIYW5vdmVyLE5ldyBKZXJzZXksVW5pdGVkIFN0YXRlcw&prds=opd:16119795782574640788,rsk:PC_13869865457259445042&sa=X&ved=0ahUKEwjd2q_M39OGAxXLKFkFHSbrAQ4QlIUHCE8oAg",
+          "product_id": "8958653994533051336",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_product&gl=us&google_domain=google.com&hl=en&location=East+Hanover%2C+New+Jersey%2C+United+States&product_id=8958653994533051336"
+        },
+        "5½": {
+          "link": "https://www.google.com/shopping/product/13100808621664768984?gl=us&hl=en&sourceid=chrome&ie=UTF-8&uule=w+CAIQICIlRWFzdCBIYW5vdmVyLE5ldyBKZXJzZXksVW5pdGVkIFN0YXRlcw&prds=opd:16119795782574640788,rsk:PC_13869865457259445042&sa=X&ved=0ahUKEwjd2q_M39OGAxXLKFkFHSbrAQ4QlIUHCFAoAw",
+          "product_id": "13100808621664768984",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_product&gl=us&google_domain=google.com&hl=en&location=East+Hanover%2C+New+Jersey%2C+United+States&product_id=13100808621664768984"
+        },
+        "6": {
+          "link": "https://www.google.com/shopping/product/17457491402119117177?gl=us&hl=en&sourceid=chrome&ie=UTF-8&uule=w+CAIQICIlRWFzdCBIYW5vdmVyLE5ldyBKZXJzZXksVW5pdGVkIFN0YXRlcw&prds=opd:16119795782574640788,rsk:PC_13869865457259445042&sa=X&ved=0ahUKEwjd2q_M39OGAxXLKFkFHSbrAQ4QlIUHCFEoBA",
+          "product_id": "17457491402119117177",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_product&gl=us&google_domain=google.com&hl=en&location=East+Hanover%2C+New+Jersey%2C+United+States&product_id=17457491402119117177"
+        },
+        "6½": {
+          "link": "https://www.google.com/shopping/product/7945396911666936839?gl=us&hl=en&sourceid=chrome&ie=UTF-8&uule=w+CAIQICIlRWFzdCBIYW5vdmVyLE5ldyBKZXJzZXksVW5pdGVkIFN0YXRlcw&prds=opd:16119795782574640788,rsk:PC_13869865457259445042&sa=X&ved=0ahUKEwjd2q_M39OGAxXLKFkFHSbrAQ4QlIUHCFIoBQ",
+          "product_id": "7945396911666936839",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_product&gl=us&google_domain=google.com&hl=en&location=East+Hanover%2C+New+Jersey%2C+United+States&product_id=7945396911666936839"
+        },
+        "7": {
+          "link": "https://www.google.com/shopping/product/13466845603755258831?gl=us&hl=en&sourceid=chrome&ie=UTF-8&uule=w+CAIQICIlRWFzdCBIYW5vdmVyLE5ldyBKZXJzZXksVW5pdGVkIFN0YXRlcw&prds=opd:16119795782574640788,rsk:PC_13869865457259445042&sa=X&ved=0ahUKEwjd2q_M39OGAxXLKFkFHSbrAQ4QlIUHCFMoBg",
+          "product_id": "13466845603755258831",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_product&gl=us&google_domain=google.com&hl=en&location=East+Hanover%2C+New+Jersey%2C+United+States&product_id=13466845603755258831"
+        },
+        "7½": {
+          "link": "https://www.google.com/shopping/product/1008300925261243358?gl=us&hl=en&sourceid=chrome&ie=UTF-8&uule=w+CAIQICIlRWFzdCBIYW5vdmVyLE5ldyBKZXJzZXksVW5pdGVkIFN0YXRlcw&prds=opd:16119795782574640788,rsk:PC_13869865457259445042&sa=X&ved=0ahUKEwjd2q_M39OGAxXLKFkFHSbrAQ4QlIUHCFQoBw",
+          "product_id": "1008300925261243358",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_product&gl=us&google_domain=google.com&hl=en&location=East+Hanover%2C+New+Jersey%2C+United+States&product_id=1008300925261243358"
+        },
+        "8½": {
+          "link": "https://www.google.com/shopping/product/423652723559752800?gl=us&hl=en&sourceid=chrome&ie=UTF-8&uule=w+CAIQICIlRWFzdCBIYW5vdmVyLE5ldyBKZXJzZXksVW5pdGVkIFN0YXRlcw&prds=opd:16119795782574640788,rsk:PC_13869865457259445042&sa=X&ved=0ahUKEwjd2q_M39OGAxXLKFkFHSbrAQ4QlIUHCFYoCQ",
+          "product_id": "423652723559752800",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_product&gl=us&google_domain=google.com&hl=en&location=East+Hanover%2C+New+Jersey%2C+United+States&product_id=423652723559752800"
+        },
+        "9": {
+          "link": "https://www.google.com/shopping/product/17336717075682104303?gl=us&hl=en&sourceid=chrome&ie=UTF-8&uule=w+CAIQICIlRWFzdCBIYW5vdmVyLE5ldyBKZXJzZXksVW5pdGVkIFN0YXRlcw&prds=opd:16119795782574640788,rsk:PC_13869865457259445042&sa=X&ved=0ahUKEwjd2q_M39OGAxXLKFkFHSbrAQ4QlIUHCFcoCg",
+          "product_id": "17336717075682104303",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_product&gl=us&google_domain=google.com&hl=en&location=East+Hanover%2C+New+Jersey%2C+United+States&product_id=17336717075682104303"
+        },
+        "9½": {
+          "link": "https://www.google.com/shopping/product/5795187043068471221?gl=us&hl=en&sourceid=chrome&ie=UTF-8&uule=w+CAIQICIlRWFzdCBIYW5vdmVyLE5ldyBKZXJzZXksVW5pdGVkIFN0YXRlcw&prds=opd:16119795782574640788,rsk:PC_13869865457259445042&sa=X&ved=0ahUKEwjd2q_M39OGAxXLKFkFHSbrAQ4QlIUHCFgoCw",
+          "product_id": "5795187043068471221",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_product&gl=us&google_domain=google.com&hl=en&location=East+Hanover%2C+New+Jersey%2C+United+States&product_id=5795187043068471221"
+        },
+        "10": {
+          "link": "https://www.google.com/shopping/product/15324347200444726754?gl=us&hl=en&sourceid=chrome&ie=UTF-8&uule=w+CAIQICIlRWFzdCBIYW5vdmVyLE5ldyBKZXJzZXksVW5pdGVkIFN0YXRlcw&prds=opd:16119795782574640788,rsk:PC_13869865457259445042&sa=X&ved=0ahUKEwjd2q_M39OGAxXLKFkFHSbrAQ4QlIUHCFkoDA",
+          "product_id": "15324347200444726754",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_product&gl=us&google_domain=google.com&hl=en&location=East+Hanover%2C+New+Jersey%2C+United+States&product_id=15324347200444726754"
+        },
+        "10½": {
+          "link": "https://www.google.com/shopping/product/15032538968901633480?gl=us&hl=en&sourceid=chrome&ie=UTF-8&uule=w+CAIQICIlRWFzdCBIYW5vdmVyLE5ldyBKZXJzZXksVW5pdGVkIFN0YXRlcw&prds=opd:16119795782574640788,rsk:PC_13869865457259445042&sa=X&ved=0ahUKEwjd2q_M39OGAxXLKFkFHSbrAQ4QlIUHCFooDQ",
+          "product_id": "15032538968901633480",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_product&gl=us&google_domain=google.com&hl=en&location=East+Hanover%2C+New+Jersey%2C+United+States&product_id=15032538968901633480"
+        },
+        "11": {
+          "link": "https://www.google.com/shopping/product/8518580369106048779?gl=us&hl=en&sourceid=chrome&ie=UTF-8&uule=w+CAIQICIlRWFzdCBIYW5vdmVyLE5ldyBKZXJzZXksVW5pdGVkIFN0YXRlcw&prds=opd:16119795782574640788,rsk:PC_13869865457259445042&sa=X&ved=0ahUKEwjd2q_M39OGAxXLKFkFHSbrAQ4QlIUHCFsoDg",
+          "product_id": "8518580369106048779",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_product&gl=us&google_domain=google.com&hl=en&location=East+Hanover%2C+New+Jersey%2C+United+States&product_id=8518580369106048779"
+        },
+        "11½": {
+          "link": "https://www.google.com/shopping/product/2022143412942432604?gl=us&hl=en&sourceid=chrome&ie=UTF-8&uule=w+CAIQICIlRWFzdCBIYW5vdmVyLE5ldyBKZXJzZXksVW5pdGVkIFN0YXRlcw&prds=opd:16119795782574640788,rsk:PC_13869865457259445042&sa=X&ved=0ahUKEwjd2q_M39OGAxXLKFkFHSbrAQ4QlIUHCFwoDw",
+          "product_id": "2022143412942432604",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_product&gl=us&google_domain=google.com&hl=en&location=East+Hanover%2C+New+Jersey%2C+United+States&product_id=2022143412942432604"
+        },
+        "12": {
+          "link": "https://www.google.com/shopping/product/7052803310069793815?gl=us&hl=en&sourceid=chrome&ie=UTF-8&uule=w+CAIQICIlRWFzdCBIYW5vdmVyLE5ldyBKZXJzZXksVW5pdGVkIFN0YXRlcw&prds=opd:16119795782574640788,rsk:PC_13869865457259445042&sa=X&ved=0ahUKEwjd2q_M39OGAxXLKFkFHSbrAQ4QlIUHCF0oEA",
+          "product_id": "7052803310069793815",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_product&gl=us&google_domain=google.com&hl=en&location=East+Hanover%2C+New+Jersey%2C+United+States&product_id=7052803310069793815"
+        },
+        "12½": {
+          "link": "https://www.google.com/shopping/product/6217377018398856335?gl=us&hl=en&sourceid=chrome&ie=UTF-8&uule=w+CAIQICIlRWFzdCBIYW5vdmVyLE5ldyBKZXJzZXksVW5pdGVkIFN0YXRlcw&prds=opd:16119795782574640788,rsk:PC_13869865457259445042&sa=X&ved=0ahUKEwjd2q_M39OGAxXLKFkFHSbrAQ4QlIUHCF4oEQ",
+          "product_id": "6217377018398856335",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_product&gl=us&google_domain=google.com&hl=en&location=East+Hanover%2C+New+Jersey%2C+United+States&product_id=6217377018398856335"
+        },
+        "13": {
+          "link": "https://www.google.com/shopping/product/68492601009083253?gl=us&hl=en&sourceid=chrome&ie=UTF-8&uule=w+CAIQICIlRWFzdCBIYW5vdmVyLE5ldyBKZXJzZXksVW5pdGVkIFN0YXRlcw&prds=opd:16119795782574640788,rsk:PC_13869865457259445042&sa=X&ved=0ahUKEwjd2q_M39OGAxXLKFkFHSbrAQ4QlIUHCF8oEg",
+          "product_id": "68492601009083253",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_product&gl=us&google_domain=google.com&hl=en&location=East+Hanover%2C+New+Jersey%2C+United+States&product_id=68492601009083253"
+        },
+        "14": {
+          "link": "https://www.google.com/shopping/product/2060240159296435002?gl=us&hl=en&sourceid=chrome&ie=UTF-8&uule=w+CAIQICIlRWFzdCBIYW5vdmVyLE5ldyBKZXJzZXksVW5pdGVkIFN0YXRlcw&prds=opd:16119795782574640788,rsk:PC_13869865457259445042&sa=X&ved=0ahUKEwjd2q_M39OGAxXLKFkFHSbrAQ4QlIUHCGAoEw",
+          "product_id": "2060240159296435002",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_product&gl=us&google_domain=google.com&hl=en&location=East+Hanover%2C+New+Jersey%2C+United+States&product_id=2060240159296435002"
+        },
+        "15": {
+          "link": "https://www.google.com/shopping/product/2788327469282767908?gl=us&hl=en&sourceid=chrome&ie=UTF-8&uule=w+CAIQICIlRWFzdCBIYW5vdmVyLE5ldyBKZXJzZXksVW5pdGVkIFN0YXRlcw&prds=opd:16119795782574640788,rsk:PC_13869865457259445042&sa=X&ved=0ahUKEwjd2q_M39OGAxXLKFkFHSbrAQ4QlIUHCGEoFA",
+          "product_id": "2788327469282767908",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_product&gl=us&google_domain=google.com&hl=en&location=East+Hanover%2C+New+Jersey%2C+United+States&product_id=2788327469282767908"
+        }
+      },
+      "highlights": [
+        "A pair of white & sea green solid round toe sneakers with regular styling has a lace-up closure.",
+        "Textile upper.",
+        "Cushioned footbed.",
+        "Rubber outsole.",
+        "Plush and comfortable, the Max Air cushioning has just the right amount of support.",
+        "A pair of white & sea green solid round toe sneakers with regular styling has a lace-up closure.",
+        "Textile upper.",
+        "Cushioned footbed.",
+        "Rubber outsole.",
+        "Plush and comfortable, the Max Air cushioning has just the right amount of support.",
+        "The Waffle outsole with flex grooves provides traction that's flexible and durable.",
+        "Nike Wordmark on tongue and heel."
+      ]
+    },
+    "sellers_results": {
+      "online_sellers": [
+        {
+          "position": 1,
+          "name": "Nike",
+          "top_quality_store": true,
+          "payment_methods": "PayPal, Google Pay, Klarna accepted",
+          "link": "https://www.google.com/url?q=https://www.nike.com/t/air-max-1-mens-shoes-2C5sX2/FD9082-102%3Fnikemt%3Dtrue%26srsltid%3DAfmBOopY6fmEBmO50EzytWwX4hGMVfqGsrgJvxMoN9ezmDjA_-oZs4S33fw&opi=95576897&sa=U&ved=0ahUKEwjd2q_M39OGAxXLKFkFHSbrAQ4Q2ykImAE&usg=AOvVaw1iMq56gXGcHIxkC4MBxoms",
+          "details_and_offers": [
+            {
+              "text": "$8.00 delivery by Sat, Jun 22"
+            }
+          ],
+          "original_price": "$140.00",
+          "base_price": "$86.97",
+          "additional_price": {
+            "shipping": "$8.00",
+            "tax": "$6.29"
+          },
+          "badge": "SALE",
+          "total_price": "$101.26"
+        },
+        {
+          "position": 2,
+          "name": "Foot Locker",
+          "top_quality_store": true,
+          "payment_methods": "PayPal, Google Pay, Klarna accepted",
+          "link": "https://www.google.com/url?q=https://www.footlocker.com/product/~/D9082102.html%3Fsource%3Dshoppingads%26locale%3Den-US%26SID%3D6936%26inceptor%3D1%26cm_mmc%3Dpaid%2520search-_-google-_-g-_-PLA-_-DPA-_--_-P-_-Prospecting-_--_-na-_--_-na-_-PLA-_-na-_--_--_-&opi=95576897&sa=U&ved=0ahUKEwjd2q_M39OGAxXLKFkFHSbrAQ4Q2ykIoQE&usg=AOvVaw04zVYRxDpbJJtMpdMe7woJ",
+          "details_and_offers": [
+            {
+              "text": "Free delivery"
+            }
+          ],
+          "original_price": "$140.00",
+          "base_price": "$109.99",
+          "additional_price": {
+            "shipping": "$0.00",
+            "tax": "$27.50"
+          },
+          "badge": "SALE",
+          "total_price": "$137.49"
+        },
+        {
+          "position": 3,
+          "name": "Finish Line",
+          "top_quality_store": true,
+          "payment_methods": "PayPal, Cash App, Klarna & more accepted",
+          "link": "https://www.google.com/url?q=https://www.finishline.com/store/browse/productDetail.jsp%3FproductId%3Dprod2776646%26brand_name%3DNIKE%26styleId%3DFD9082%26colorId%3D102&opi=95576897&sa=U&ved=0ahUKEwjd2q_M39OGAxXLKFkFHSbrAQ4Q2ykIqgE&usg=AOvVaw2KuQQATPcg2EFnVtIvoqaw",
+          "details_and_offers": [
+            {
+              "text": "$8.99 delivery by Fri, Jun 14"
+            }
+          ],
+          "original_price": "$140.00",
+          "base_price": "$85.00",
+          "additional_price": {
+            "shipping": "$8.99",
+            "tax": "$6.23"
+          },
+          "badge": "SALE",
+          "total_price": "$100.22"
+        },
+        {
+          "position": 4,
+          "name": "farfetch.com",
+          "top_quality_store": true,
+          "payment_methods": "PayPal, Alipay, Klarna & more accepted",
+          "link": "https://www.google.com/url?q=https://www.farfetch.com/shopping/men/nike-air-max-1-sneakers-item-21242456.aspx%3Flang%3Den-US%26fsb%3D1%26size%3D31%26storeid%3D14912&opi=95576897&sa=U&ved=0ahUKEwjd2q_M39OGAxXLKFkFHSbrAQ4Q2ykIswE&usg=AOvVaw0vnQsJxJbe3dPkAwlAmg7d",
+          "details_and_offers": [
+            {
+              "text": "Free delivery by Thu, Jun 20"
+            }
+          ],
+          "original_price": "$113.00",
+          "base_price": "$90.00",
+          "additional_price": {
+            "shipping": "$0.00",
+            "tax": "$5.97"
+          },
+          "badge": "SALE",
+          "total_price": "$95.97"
+        },
+        {
+          "position": 5,
+          "name": "farfetch.com",
+          "top_quality_store": true,
+          "payment_methods": "PayPal, Alipay, Klarna & more accepted",
+          "link": "https://www.google.com/url?q=https://www.farfetch.com/shopping/men/nike-air-max-1-sneakers-item-21242456.aspx%3Flang%3Den-US%26fsb%3D1%26size%3D31%26storeid%3D14912&opi=95576897&sa=U&ved=0ahUKEwjd2q_M39OGAxXLKFkFHSbrAQ4Q2ykIvAE&usg=AOvVaw2wUbpLaaqPKdAPT9op5xjo",
+          "details_and_offers": [
+            {
+              "text": "Free delivery by Mon, Jun 24"
+            }
+          ],
+          "original_price": "$113.00",
+          "base_price": "$90.00",
+          "additional_price": {
+            "shipping": "$0.00",
+            "tax": "$5.97"
+          },
+          "badge": "SALE",
+          "total_price": "$95.97"
+        },
+        {
+          "position": 6,
+          "name": "eBay",
+          "payment_methods": "PayPal, Google Pay accepted",
+          "link": "https://www.google.com/url?q=https://www.ebay.com/itm/256520795002%3Fchn%3Dps%26mkevt%3D1%26mkcid%3D28&opi=95576897&sa=U&ved=0ahUKEwjd2q_M39OGAxXLKFkFHSbrAQ4Q2ykIxQE&usg=AOvVaw3C2jfY9U08lhSML9yzyy4K",
+          "details_and_offers": [
+            {
+              "text": "$14.95 delivery"
+            }
+          ],
+          "base_price": "$110.00",
+          "additional_price": {
+            "shipping": "$14.95",
+            "tax": "$7.29"
+          },
+          "total_price": "$132.24",
+          "offer_id": "6296794",
+          "offer_link": "https://www.google.com/shopping/product/7790597859974711893/plusbox/6296794?gl=us&hl=en&sourceid=chrome&ie=UTF-8&uule=w+CAIQICIlRWFzdCBIYW5vdmVyLE5ldyBKZXJzZXksVW5pdGVkIFN0YXRlcw&prds=eto:1989779233899074218_0,pid:16119795782574640788,rsk:PC_13869865457259445042",
+          "serpapi_offer_link": "https://serpapi.com/search.json?device=desktop&engine=google_product&gl=us&google_domain=google.com&hl=en&location=East%20Hanover%2C%20New%20Jersey%2C%20United%20States&offer_id=6296794&product_id=7790597859974711893"
+        },
+        {
+          "position": 7,
+          "name": "Walmart - The Spot for Fits & Kicks",
+          "payment_methods": "PayPal, Affirm accepted",
+          "link": "https://www.google.com/url?q=https://www.walmart.com/ip/Men-s-Nike-Air-Max-1-White-Black-Pure-Platinum-FD9082-102-8/5370543160%3Fwmlspartner%3Dwlpa%26selectedSellerId%3D101127721&opi=95576897&sa=U&ved=0ahUKEwjd2q_M39OGAxXLKFkFHSbrAQ4Q2ykIywE&usg=AOvVaw0FY62gHe7cLavy9H0ybY-6",
+          "details_and_offers": [
+            {
+              "text": "Free delivery"
+            }
+          ],
+          "base_price": "$129.95",
+          "additional_price": {
+            "shipping": "$0.00",
+            "tax": "$8.61"
+          },
+          "total_price": "$138.56"
+        },
+        {
+          "position": 8,
+          "name": "StockX",
+          "payment_methods": "PayPal, Google Pay accepted",
+          "link": "https://www.google.com/url?q=https://stockx.com/nike-air-max-1-white-black-medium-olive%3Fcountry%3DUS%26currencyCode%3DUSD%26size%3D8%26srsltid%3DAfmBOorvLm-NugLl8FHOGPvukI2Cje-ToDjPdH_nZhT4fUX3vaZWXnoH6aE&opi=95576897&sa=U&ved=0ahUKEwjd2q_M39OGAxXLKFkFHSbrAQ4Q2ykIzwE&usg=AOvVaw0Pl1sw-woCshVYFIOHZtGw",
+          "details_and_offers": [
+            {
+              "text": "$17.64 delivery"
+            }
+          ],
+          "base_price": "$81.00",
+          "additional_price": {
+            "shipping": "$17.64",
+            "tax": "$9.72"
+          },
+          "badge": "LOW PRICE",
+          "total_price": "$108.36"
+        },
+        {
+          "position": 9,
+          "name": "GOAT",
+          "payment_methods": "PayPal, Alipay, Klarna & more accepted",
+          "link": "https://www.google.com/url?q=https://www.goat.com/sneakers/air-max-1-medium-olive-fd9082-102%3Fsrsltid%3DAfmBOopV2Q_Q-wBUJPmsOT3TWJaxUOCMz7PKaFHkWgTXKTDj0s5FgPRaJxI&opi=95576897&sa=U&ved=0ahUKEwjd2q_M39OGAxXLKFkFHSbrAQ4Q2ykI1QE&usg=AOvVaw3Ln1IyV5YHEUg0d2OvpylO",
+          "details_and_offers": [
+            {
+              "text": "$14.75 delivery by Fri, Jun 14"
+            }
+          ],
+          "base_price": "$86.00",
+          "additional_price": {
+            "shipping": "$14.75",
+            "tax": "$8.69"
+          },
+          "total_price": "$109.44"
+        },
+        {
+          "position": 10,
+          "name": "SNIPES USA",
+          "payment_methods": "PayPal, Google Pay accepted",
+          "link": "https://www.google.com/url?q=https://www.snipesusa.com/mens-air-max-1----14556500030.html&opi=95576897&sa=U&ved=0ahUKEwjd2q_M39OGAxXLKFkFHSbrAQ4Q2ykI2QE&usg=AOvVaw0OFuL5cdNrBzZ_464ocP8J",
+          "details_and_offers": [
+            {
+              "text": "Free delivery by Fri, Jun 14"
+            }
+          ],
+          "base_price": "$119.99",
+          "additional_price": {
+            "shipping": "$0.00",
+            "tax": "$7.95"
+          },
+          "total_price": "$127.94"
+        }
+      ]
+    },
+    "specs_results": {
+      "general": {
+        "product_type": "Casual Shoes",
+        "color": "White/Black/Pure Platinum",
+        "shoe_size": "8"
+      }
+    },
+    "reviews_results": {
+      "ratings": [
+        {
+          "stars": 1,
+          "amount": 34
+        },
+        {
+          "stars": 2,
+          "amount": 12
+        },
+        {
+          "stars": 3,
+          "amount": 12
+        },
+        {
+          "stars": 4,
+          "amount": 66
+        },
+        {
+          "stars": 5,
+          "amount": 670
+        }
+      ],
+      "filters": [
+        {
+          "label": "Attractive",
+          "count": 210
+        },
+        {
+          "label": "Comfortable",
+          "count": 171
+        },
+        {
+          "label": "Durable",
+          "count": 16
+        },
+        {
+          "label": "Supportive",
+          "count": 12
+        },
+        {
+          "label": "Weight",
+          "count": 9
+        },
+        {
+          "label": "Craftsmanship",
+          "count": 2
+        },
+        {
+          "label": "Shape retention",
+          "count": 1
+        },
+        {
+          "label": "Weather resistance",
+          "count": 1
+        },
+        {
+          "label": "Ease of cleaning",
+          "count": 1
+        }
+      ],
+      "reviews": [
+        {
+          "position": 1,
+          "title": "1s for the Win",
+          "date": "May 1, 2024",
+          "rating": 5,
+          "source": "Kaya · Review provided by store.nike.com",
+          "content": "I’m loving my Air Max 1 Essentials! They are so comfortable and stylish without being overly flashy. They are true to size and fit great straight out of the box, no need to be broken in. So far, I’ve been wearing these shoes to work where I’m on my feet most of the day, but I imagine they’d be great for light work outs or runs too. I work in high end sales and try to wear outfits that are comfertable and practical yet sophisticated, so these can definitely can be dressed up or down. I like wearing them with dresses and skirts to contrast the sportiness of the shoe. The mix of orange, grey, and white is unique yet neutral enough to allow for lots of different options when it comes to styling. The color combo really makes the shoes stand out and I’ve gotten so many compliments just wearing them the past two weeks. I also really appreciate the contrasting textures on this shoe, which features suede, mesh, and crocodile leather elements. The silhouette of this shoe is truly timeless. It is the perfect balance of chunky and slim, with a kind of retro feel. Honestly I wouldn’t change anything about these shoes, I just need more colors! "
+        }
+      ]
+    },
+    "product_variations": [
+      {
+        "thumbnail": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcT35c4U93A_TWGCTcOdrIzualGXug4-n6ZHwEhzL3MMZko0WBQZ6trE9hqKMKVi5yQK-evhkXw9GfLxwOeANO-j0Rw4b02ZIA7SruyWqhqhDXLE5mfF_w&usqp=CAY"
+      },
+      {
+        "link": "https://www.google.com/shopping/product/14728456490039342333?gl=us&hl=en&sourceid=chrome&ie=UTF-8&uule=w+CAIQICIlRWFzdCBIYW5vdmVyLE5ldyBKZXJzZXksVW5pdGVkIFN0YXRlcw&prds=opd:16119795782574640788,rsk:PC_13869865457259445042&sa=X&ved=0ahUKEwjd2q_M39OGAxXLKFkFHSbrAQ4QlIUHCEIoAQ",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_product&gl=us&google_domain=google.com&hl=en&product_id=14728456490039342333&uule=w%20CAIQICIlRWFzdCBIYW5vdmVyLE5ldyBKZXJzZXksVW5pdGVkIFN0YXRlcw",
+        "thumbnail": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTRy_zAaHW_yMZ8I_ng7nO88mrNcWB3Z6L2KAUeDuyFqpNgeWCTjK1Flig88c2-hxa8L8J7cDgBbPKd6tsZBIUNCgq3AjyVAmxCbtKyR4DaLge6Zhd1TeM&usqp=CAY"
+      },
+      {
+        "link": "https://www.google.com/shopping/product/16131172818075841774?gl=us&hl=en&sourceid=chrome&ie=UTF-8&uule=w+CAIQICIlRWFzdCBIYW5vdmVyLE5ldyBKZXJzZXksVW5pdGVkIFN0YXRlcw&prds=opd:16119795782574640788,rsk:PC_13869865457259445042&sa=X&ved=0ahUKEwjd2q_M39OGAxXLKFkFHSbrAQ4QlIUHCEMoAg",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_product&gl=us&google_domain=google.com&hl=en&product_id=16131172818075841774&uule=w%20CAIQICIlRWFzdCBIYW5vdmVyLE5ldyBKZXJzZXksVW5pdGVkIFN0YXRlcw",
+        "thumbnail": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRRZHE7yqXzEPQAApubrkeSb-5dWlJDOdRXA5zPlXtNHnoEUEKeOFCCE7oDmK8UfpPjr3OThRXUSBBvqr3rUrwwBCtGCuWN-BmywzY8EOcrOeZspKn9xzE&usqp=CAY"
+      },
+      {
+        "link": "https://www.google.com/shopping/product/3071497918255041454?gl=us&hl=en&sourceid=chrome&ie=UTF-8&uule=w+CAIQICIlRWFzdCBIYW5vdmVyLE5ldyBKZXJzZXksVW5pdGVkIFN0YXRlcw&prds=opd:16119795782574640788,rsk:PC_13869865457259445042&sa=X&ved=0ahUKEwjd2q_M39OGAxXLKFkFHSbrAQ4QlIUHCEQoAw",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_product&gl=us&google_domain=google.com&hl=en&product_id=3071497918255041454&uule=w%20CAIQICIlRWFzdCBIYW5vdmVyLE5ldyBKZXJzZXksVW5pdGVkIFN0YXRlcw",
+        "thumbnail": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRjx5h_WJTC_t7zAcfMRqipFtQWysNZOxM-Wrgr3a_xF5knbZpbpXxLKX_FNTAKMtn3NZf0DEfrik7Vcwiow7TIJcFzIRIGQ9xeXVZe2Yk1NNwWdqSLRw&usqp=CAY"
+      },
+      {
+        "link": "https://www.google.com/shopping/product/10720181208363980419?gl=us&hl=en&sourceid=chrome&ie=UTF-8&uule=w+CAIQICIlRWFzdCBIYW5vdmVyLE5ldyBKZXJzZXksVW5pdGVkIFN0YXRlcw&prds=opd:16119795782574640788,rsk:PC_13869865457259445042&sa=X&ved=0ahUKEwjd2q_M39OGAxXLKFkFHSbrAQ4QlIUHCEUoBA",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_product&gl=us&google_domain=google.com&hl=en&product_id=10720181208363980419&uule=w%20CAIQICIlRWFzdCBIYW5vdmVyLE5ldyBKZXJzZXksVW5pdGVkIFN0YXRlcw",
+        "thumbnail": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQU3F18AV6ouE5as8WELA6dU0yFeZaAlIvQCBxdog1N6BVygfmCetFqM9oh_PVIBNozKCO51d5eO15ySs3u8MAZy9UhfFzMrhePRTGR7V0L6IMfLAa-7U0&usqp=CAY"
+      },
+      {
+        "link": "https://www.google.com/shopping/product/7228382034530566911?gl=us&hl=en&sourceid=chrome&ie=UTF-8&uule=w+CAIQICIlRWFzdCBIYW5vdmVyLE5ldyBKZXJzZXksVW5pdGVkIFN0YXRlcw&prds=opd:16119795782574640788,rsk:PC_13869865457259445042&sa=X&ved=0ahUKEwjd2q_M39OGAxXLKFkFHSbrAQ4QlIUHCEYoBQ",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_product&gl=us&google_domain=google.com&hl=en&product_id=7228382034530566911&uule=w%20CAIQICIlRWFzdCBIYW5vdmVyLE5ldyBKZXJzZXksVW5pdGVkIFN0YXRlcw",
+        "thumbnail": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcT35c4U93A_TWGCTcOdrIzualGXug4-n6ZHwEhzL3MMZko0WBQZ6trE9hqKMKVi5yQK-evhkXw9GfLxwOeANO-j0Rw4b02ZIA7SruyWqhqhDXLE5mfF_w&usqp=CAY"
+      },
+      {
+        "link": "https://www.google.com/shopping/product/28398155377494804?gl=us&hl=en&sourceid=chrome&ie=UTF-8&uule=w+CAIQICIlRWFzdCBIYW5vdmVyLE5ldyBKZXJzZXksVW5pdGVkIFN0YXRlcw&prds=opd:16119795782574640788,rsk:PC_13869865457259445042&sa=X&ved=0ahUKEwjd2q_M39OGAxXLKFkFHSbrAQ4QlIUHCEcoBg",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_product&gl=us&google_domain=google.com&hl=en&product_id=28398155377494804&uule=w%20CAIQICIlRWFzdCBIYW5vdmVyLE5ldyBKZXJzZXksVW5pdGVkIFN0YXRlcw",
+        "thumbnail": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRTGZ5ikrkTqPlBiaiwuO1aPlxt6fpOt-mRU6f1V9YeMhh9PBg18S5f3FpWt34LmYNNFnudkDqxMnZpfoQmhS6e-eNb-n2RUG9-gRunQhi6RP-IyddgUg&usqp=CAY"
+      },
+      {
+        "link": "https://www.google.com/shopping/product/1341608805721205945?gl=us&hl=en&sourceid=chrome&ie=UTF-8&uule=w+CAIQICIlRWFzdCBIYW5vdmVyLE5ldyBKZXJzZXksVW5pdGVkIFN0YXRlcw&prds=opd:16119795782574640788,rsk:PC_13869865457259445042&sa=X&ved=0ahUKEwjd2q_M39OGAxXLKFkFHSbrAQ4QlIUHCEgoBw",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_product&gl=us&google_domain=google.com&hl=en&product_id=1341608805721205945&uule=w%20CAIQICIlRWFzdCBIYW5vdmVyLE5ldyBKZXJzZXksVW5pdGVkIFN0YXRlcw",
+        "thumbnail": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcS3YdHjYxIyPNVGfOkKyUkSHd8-cKfuWzY6FLpu578KuyJ6ZNf9U7a96bodooy6tL0WsBZWaLSDKgvkE7P8OO7frmotdYCS5Sh9UkZ_4an0hlbA1q7It0g&usqp=CAY"
+      },
+      {
+        "link": "https://www.google.com/shopping/product/7838463441265547966?gl=us&hl=en&sourceid=chrome&ie=UTF-8&uule=w+CAIQICIlRWFzdCBIYW5vdmVyLE5ldyBKZXJzZXksVW5pdGVkIFN0YXRlcw&prds=opd:16119795782574640788,rsk:PC_13869865457259445042&sa=X&ved=0ahUKEwjd2q_M39OGAxXLKFkFHSbrAQ4QlIUHCEkoCA",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_product&gl=us&google_domain=google.com&hl=en&product_id=7838463441265547966&uule=w%20CAIQICIlRWFzdCBIYW5vdmVyLE5ldyBKZXJzZXksVW5pdGVkIFN0YXRlcw",
+        "thumbnail": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQHc_NKDgMPEZ0UlrINQflv-QoGH72X_XN2lwcLeXz1qKxnhxgVp4HBqchenoancOazYJFV4-BJzydC1hqlcaO_001TigV8Z_fosQVp4pKgSkXdpBxzYmI&usqp=CAY"
+      },
+      {
+        "link": "https://www.google.com/shopping/product/12207215836783594608?gl=us&hl=en&sourceid=chrome&ie=UTF-8&uule=w+CAIQICIlRWFzdCBIYW5vdmVyLE5ldyBKZXJzZXksVW5pdGVkIFN0YXRlcw&prds=opd:16119795782574640788,rsk:PC_13869865457259445042&sa=X&ved=0ahUKEwjd2q_M39OGAxXLKFkFHSbrAQ4QlIUHCEooCQ",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_product&gl=us&google_domain=google.com&hl=en&product_id=12207215836783594608&uule=w%20CAIQICIlRWFzdCBIYW5vdmVyLE5ldyBKZXJzZXksVW5pdGVkIFN0YXRlcw",
+        "thumbnail": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRG07nZSyFiZs_Yqt6YEWKVIyNBfzcE0zs3L8BLxeXNj0KAaTd8NiQxAqsB-NIE_JbbAlzZFdVUaCTCLK-icsGdj5WnthjFFejNnbsJZOmnJCuk4Hrtyg&usqp=CAY"
+      },
+      {
+        "link": "https://www.google.com/shopping/product/17647411019605834054?gl=us&hl=en&sourceid=chrome&ie=UTF-8&uule=w+CAIQICIlRWFzdCBIYW5vdmVyLE5ldyBKZXJzZXksVW5pdGVkIFN0YXRlcw&prds=opd:16119795782574640788,rsk:PC_13869865457259445042&sa=X&ved=0ahUKEwjd2q_M39OGAxXLKFkFHSbrAQ4QlIUHCEsoCg",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_product&gl=us&google_domain=google.com&hl=en&product_id=17647411019605834054&uule=w%20CAIQICIlRWFzdCBIYW5vdmVyLE5ldyBKZXJzZXksVW5pdGVkIFN0YXRlcw",
+        "thumbnail": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSNSgDy9dbPFls5ZYOxtQ0OWoBhXlJjGZqhAxYIhC8NG9usDtGrgpiqekmX6EpmHxiO6nUAZK_Oz7tUS342aiBuwCujzklPjLddjlMOuUFeZiwVElyR3A&usqp=CAY"
+      }
+    ]
+  }

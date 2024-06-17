@@ -1,3 +1,4 @@
+from datetime import datetime
 from typing import Optional
 from pydantic import BaseModel, Field
 
@@ -69,7 +70,32 @@ class GoogleShoppingProductSellerResultsResponse(BaseModel):
 class GoogleShoppingProductResponse(BaseModel):
     sellers_results: GoogleShoppingProductSellerResultsResponse
 
+# Recommend products API, new approach
+class RecommendedProductOffer(BaseModel):
+    supplier: str
+    is_high_quality: bool = False
+    link: str | None = None
+    currency: str
+    price: float | None = None
+    price_uah: float | None = None
+    shipping: float | None = None
+    tax: float | None = None
+    total_price: float | None = None
+    total_price_uah: float | None = None
+    # TODO parse from string
+    delivery_by: datetime | None = Field(default_factory=lambda : datetime.today())
+    location: str
 
+class RecommendedProduct(BaseModel):
+    id: str
+    title: str
+    image: str | None = None
+    google_product_link: str | None = None
+    offer: RecommendedProductOffer
+    has_more_offers: bool = False
+
+
+# Candidate products, old approach
 class CandidateProduct(BaseModel):
     title: str
     position: int | None
@@ -86,6 +112,8 @@ class PreparedCandidateProduct(CandidateProduct):
     price_uah: int | None = None
     is_hidden: bool = False
     location: str
+
+#API Schemas
 
 class RecommendProductsResponse(BaseModel):
     products: list[CandidateProduct]
