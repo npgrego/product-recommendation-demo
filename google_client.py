@@ -64,7 +64,9 @@ class GoogleClient:
             **self._search_by_location(engine="google_shopping", location=location, q=query)
         )
 
-        products = response.shopping_results + response.related_shopping_results
+        products = response.shopping_results 
+        # + response.related_shopping_results
+        # TODO Dedupe
 
         logger.info(f"Got {len(products)} prodcuts from SERP shopping API")
         if app_settings.max_candidates:

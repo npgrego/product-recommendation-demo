@@ -1,8 +1,7 @@
 import json
-import requests
+
 from datetime import date
-from requests.auth import HTTPBasicAuth
-from urllib.parse import urlparse, parse_qs, urljoin
+
 
 from location import LOCATION_DESCRIPTION, get_exchange_rates, extract_price_currency
 from google_client import GoogleClient
@@ -11,13 +10,10 @@ from schemas import (
     GoogleShoppingResponse, 
     GoogleShoppingProductOffer, 
     GoogleShoppingProductResponse,
-    RecommendProductsRequest,
     RecommendedProduct,
     RecommendedProductOffer,
-    RequestedProduct
 )
 import streamlit as st
-from config import app_settings
 
 debug_mode = False
 
@@ -52,8 +48,10 @@ def prepare_recommended_product_offer(google_product_offer: GoogleShoppingProduc
     price, currency = extract_price_currency(price=google_product_offer.base_price, location=location)
     rate = exchange_rates.get(currency, 0) if currency else 0
 
-    shipping, _ = extract_price_currency(price=google_product_offer.additional_price.shipping, location=location)
-    tax, _ = extract_price_currency(price=google_product_offer.additional_price.tax, location=location)
+    shipping = tax = 0
+    if google_product_offer.additional_price:
+        shipping, _ = extract_price_currency(price=google_product_offer.additional_price.shipping, location=location)
+        tax, _ = extract_price_currency(price=google_product_offer.additional_price.tax, location=location)
 
     total_price, _ = extract_price_currency(price=google_product_offer.total_price, location=location)
 
@@ -64,11 +62,11 @@ def prepare_recommended_product_offer(google_product_offer: GoogleShoppingProduc
         link=google_product_offer.link,
         price=price,
         currency=currency,
-        price_uah=round(price*rate, 2) if price else None,
+        price_uah=round(price*rate, 2) if price is not None else None,
         shipping=shipping,
         tax=tax,
         total_price=total_price,
-        total_price_uah=round(total_price*rate, 2) if total_price else None,
+        total_price_uah=round(total_price*rate, 2) if total_price is not None else None,
         # TODO parse from string
         # delivery_by=None,
         location=location
@@ -79,7 +77,9 @@ def get_recommended_products(query:str, location:str, debug_mode: bool) -> list[
     if debug_mode:
         with open("./example-shopping-products.json", "r") as fp:
             shopping_search_result = GoogleShoppingResponse(**json.load(fp))
-            google_products = shopping_search_result.shopping_results + shopping_search_result.related_shopping_results
+            google_products = shopping_search_result.shopping_results 
+            # + shopping_search_result.related_shopping_results
+            # TODO dedupe
     else:
         google_products = GoogleClient().get_products(query=query, location=location)
     
@@ -104,23 +104,6 @@ def get_more_offers_on_click(product_id:str, location:str, debug_mode: bool):
         location=location,
         debug_mode=debug_mode
     )
-
-
-# PARSE REQUSTED product URL
-def parse_product(product_url):
-
-    payload = RecommendProductsRequest(
-        product_url=product_url
-    )
-
-    response = requests.post(
-        url=urljoin(app_settings.app_server, "/parse-product/"), 
-        auth=HTTPBasicAuth(app_settings.app_username, app_settings.app_password),
-        json=payload.model_dump()
-    )
-    response.raise_for_status()
-    
-    return RequestedProduct(**response.json())
 
 
 # SHOW
@@ -152,20 +135,9 @@ def show_recommended_products(container: st) -> None:
         col_button.button(
             "Get more Offers", 
             key=f"offers_{p.id}", 
-            on_click=get_recommended_product_offers, 
+            on_click=get_more_offers_on_click, 
             kwargs={"product_id":p.id, "location":p.offer.location, "debug_mode":debug_mode}
         )
-
-def show_requested_product():
-    requested_product: RequestedProduct | None = st.session_state["requested_product"]
-    if requested_product:
-        with st.expander("Parsed info"):
-            st.image(requested_product.main_image, width=400)
-            st.write(requested_product.title)
-            st.write(requested_product.description)
-            st.write(requested_product.price)
-            st.write(requested_product.currency)
-            st.write(requested_product.query)
 
 
 def show():
@@ -182,21 +154,7 @@ def show():
     if "requested_product" not in st.session_state:
         st.session_state["requested_product"] = None
 
-    st.header("Nova Product Search, v0.2.3")
-    #st.info("Makes google shopping searches for location 'East Hanover,New Jersey,United States'")
-
-    # !!! Temporary disable, focus on google request
-    # product_url = st.text_input("Product URL")
-
-    # if st.button("Parse product", disabled=not product_url):
-    #     try:
-    #         st.session_state["requested_product"] = parse_product(product_url=product_url)
-    #     except Exception as e:
-    #         st.error(e)
-    #         st.session_state["requested_product"] = None
-
-    # show_requested_product()
-    # st.divider()
+    st.header("Nova Product Search, v0.2.4")
 
     query = st.text_input("Google Query", value="nike air max 1")
     
@@ -225,24 +183,24 @@ def show():
 
     with st.expander("API payload examples v0", expanded=False):
         st.write("### getProducts")
-        st.info("{'query':'nike air max 1','location': 'en'}")
+        st.info("{'query':'nike air max 1','location': 'us'}")
         st.write(
             {
                 "filters": {
                     "TBD": "TBD"
                 },
-                "products":[p.model_dump(mode="json") for p in get_recommended_products(query="", location="en", debug_mode=True)]
+                "products":[p.model_dump(mode="json") for p in get_recommended_products(query="", location="us", debug_mode=True)]
             }
         )
 
         st.write("### getProductOffers")
-        st.info("{'product_id':'123456','location': 'en'}")
+        st.info("{'product_id':'123456','location': 'us'}")
         st.write(
             {
                 "product": {
                     "TBD": "Extended product info"
                 },
-                "offers":[p.model_dump(mode="json") for p in get_recommended_product_offers(product_id="", location="en", debug_mode=True)]
+                "offers":[p.model_dump(mode="json") for p in get_recommended_product_offers(product_id="", location="us", debug_mode=True)]
             }
         )
 

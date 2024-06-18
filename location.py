@@ -99,19 +99,24 @@ def get_price_currency(price: str, location:str) -> str:
 
 def extract_price_currency(price: str, location:str) -> tuple[float,str]:
 
+    currency = LOCATION_DEFAULT_CURRENCY[location]
+    extracted_price = 0.0
+
     if not price:
-        return None, None
+        return extracted_price, currency
     
     parsed_price: Price = parse_price(price=price)
 
-    currency = None
+    if parsed_price.amount is None and parsed_price.currency is None:
+        return extracted_price, currency
 
-    for repr, iso_cur in REPR_CURRENCY.items():
-        if repr in parsed_price.currency.lower():
-            currency = iso_cur
-            break
 
-    if not currency:
-        currency = LOCATION_DEFAULT_CURRENCY[location]
+    if parsed_price.currency:
+        for repr, iso_cur in REPR_CURRENCY.items():
+            if repr in parsed_price.currency.lower():
+                currency = iso_cur
+                break
+
+    
 
     return float(parsed_price.amount), currency
