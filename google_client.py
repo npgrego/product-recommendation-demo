@@ -3,7 +3,10 @@ from serpapi import Client
 import copy
 import logging
 
-from schemas import GoogleShoppingProductOffer, GoogleShoppingResponse, GoogleShoppingProduct, GoogleShoppingProductResponse
+from schemas import (
+    GoogleShoppingProductsResponse, 
+    GoogleShoppingProductResponse
+)
 from config import app_settings
 
 logger = logging.getLogger(__name__)
@@ -58,29 +61,29 @@ class GoogleClient:
         response = self.client.search(**params).as_dict()
         return response
 
-    def get_products(self, query: str, location: str) -> list[GoogleShoppingProduct]:
-        
-        response = GoogleShoppingResponse(
+    def get_products(self, query: str, location: str) -> GoogleShoppingProductsResponse:
+        logger.info("Calling to SERP Shopping API")
+        return GoogleShoppingProductsResponse(
             **self._search_by_location(engine="google_shopping", location=location, q=query)
         )
 
-        products = response.shopping_results 
-        # + response.related_shopping_results
-        # TODO Dedupe
+        # products = response.shopping_results 
+        # # + response.related_shopping_results
+        # # TODO Dedupe
 
-        logger.info(f"Got {len(products)} prodcuts from SERP shopping API")
-        if app_settings.max_candidates:
-            logger.info(f"Reducing candidates to max {app_settings.max_candidates}")
-            products = products[:app_settings.max_candidates]
+        # logger.info(f"Got {len(products)} prodcuts from SERP shopping API")
+        # if app_settings.max_candidates:
+        #     logger.info(f"Reducing candidates to max {app_settings.max_candidates}")
+        #     products = products[:app_settings.max_candidates]
 
-        return products
+        # return products
 
-    def get_product_offers(self, product_id: str, location: str) -> list[GoogleShoppingProductOffer]:
+    def get_product(self, product_id: str, location: str) -> GoogleShoppingProductResponse:
         logger.info("Calling to SERP Shopping Product API")
-        response = GoogleShoppingProductResponse(
+        return GoogleShoppingProductResponse(
             **self._search_by_location(engine="google_product", location=location, product_id=product_id)
         )
 
-        return response.sellers_results.online_sellers
+        # return response.sellers_results.online_sellers
 
 

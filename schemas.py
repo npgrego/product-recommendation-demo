@@ -27,7 +27,17 @@ class GoogleShoppingProduct(BaseModel):
     store_rating: float | None = None
     store_reviews: int | None = None
 
-class GoogleShoppingResponse(BaseModel):
+
+class GoogleShoppingProductsFilterValue(BaseModel):
+    text: str|None = None
+    tbs: str
+
+class GoogleShoppingProductsFilter(BaseModel):
+    type: str
+    options: list[GoogleShoppingProductsFilterValue] = Field(default_factory=list)
+
+class GoogleShoppingProductsResponse(BaseModel):
+    filters: list[GoogleShoppingProductsFilter] = Field(default_factory=list)
     shopping_results: list[GoogleShoppingProduct] = Field(default_factory=list)
     related_shopping_results: list[GoogleShoppingProduct] = Field(default_factory=list)
 
@@ -53,21 +63,40 @@ class GoogleShoppingProductOffer(BaseModel):
 class GoogleShoppingProductSellerResultsResponse(BaseModel):
     online_sellers: list[GoogleShoppingProductOffer] = Field(default_factory=list)
 
+class GoogleShoppingProductDetailsMedia(BaseModel):
+    type: str
+    link: str
+
+class GoogleShoppingProductDetailsSize(BaseModel):
+    product_id: str
+    selected: bool = False
+
+class GoogleShoppingProductDetails(BaseModel):
+    product_id: str
+    title: str
+    media: list[GoogleShoppingProductDetailsMedia] = Field(default_factory=list)
+    sizes: dict[str, GoogleShoppingProductDetailsSize] = Field(default_factory=dict)
+
+
 class GoogleShoppingProductResponse(BaseModel):
+    product_results: GoogleShoppingProductDetails
     sellers_results: GoogleShoppingProductSellerResultsResponse
 
 # Recommend products API, new approach
+class ExchangedAmount(BaseModel):
+    amount: float | None = None
+    currency: str
+    original_amount: float | None = None
+    original_currency: str
+
 class RecommendedProductOffer(BaseModel):
-    supplier: str
+    supplier: str | None = None
     is_high_quality: bool = False
     link: str | None = None
-    currency: str
-    price: float | None = None
-    price_uah: float | None = None
-    shipping: float | None = None
-    tax: float | None = None
-    total_price: float | None = None
-    total_price_uah: float | None = None
+    price: ExchangedAmount
+    shipping: ExchangedAmount | None = None
+    tax: ExchangedAmount | None = None
+    total_price: ExchangedAmount | None = None
     # TODO parse from string
     delivery_by: datetime | None = Field(default_factory=lambda : datetime.today())
     location: str
@@ -75,7 +104,28 @@ class RecommendedProductOffer(BaseModel):
 class RecommendedProduct(BaseModel):
     id: str
     title: str
-    image: str | None = None
+    images: list[str] | None = Field(default_factory=list)
     google_product_link: str | None = None
-    offer: RecommendedProductOffer
+    offers:list[RecommendedProductOffer] = Field(default_factory=list)
     has_more_offers: bool = False
+    more_offers_text: str | None = None
+
+class ProductFilterValue(BaseModel):
+    text: str
+    key: str
+    is_selected: bool = False
+    link: str | None = None
+
+class ProductFilter(BaseModel):
+    name: str
+    values: list[ProductFilterValue]
+
+
+
+class GetProductsResponse(BaseModel):
+    filters: list[ProductFilter] = Field(default_factory=list)
+    products: list[RecommendedProduct]
+
+class GetProductResponse(BaseModel):
+    selected_filters: list[ProductFilter] = Field(default_factory=list)
+    product: RecommendedProduct

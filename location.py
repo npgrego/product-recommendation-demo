@@ -5,6 +5,8 @@ from datetime import date
 from pydantic import BaseModel
 from price_parser import parse_price, Price
 
+from schemas import ExchangedAmount
+
 CURRENCY_UAH = "UAH"
 CURRENCY_EUR = "EUR"
 CURRENCY_USD = "USD"
@@ -97,26 +99,33 @@ def get_price_currency(price: str, location:str) -> str:
 
     return currency
 
-def extract_price_currency(price: str, location:str) -> tuple[float,str]:
+def get_exchanged_amount(price: str, location:str,  exchange_rates: dict[str, float]) -> ExchangedAmount:
 
-    currency = LOCATION_DEFAULT_CURRENCY[location]
-    extracted_price = 0.0
+    exchanged_amount = ExchangedAmount(
+        amount=0,
+        currency=CURRENCY_UAH,
+        original_amount=0,
+        original_currency=LOCATION_DEFAULT_CURRENCY[location]
+    )
 
     if not price:
-        return extracted_price, currency
+        return exchanged_amount
     
     parsed_price: Price = parse_price(price=price)
 
     if parsed_price.amount is None and parsed_price.currency is None:
-        return extracted_price, currency
+        return exchanged_amount
 
 
     if parsed_price.currency:
         for repr, iso_cur in REPR_CURRENCY.items():
             if repr in parsed_price.currency.lower():
-                currency = iso_cur
+                exchanged_amount.original_currency = iso_cur
                 break
 
-    
+    exchanged_amount.original_amount = float(parsed_price.amount)
 
-    return float(parsed_price.amount), currency
+    rate = exchange_rates.get(exchanged_amount.original_currency, 0)
+    exchanged_amount.amount = round(exchanged_amount.original_amount*rate, 2)
+
+    return exchanged_amount
