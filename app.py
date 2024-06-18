@@ -223,7 +223,7 @@ def show():
     if st.session_state["recommended_product_offers"]:
         show_recommended_product_offers(product_offers_container)
 
-    with st.expander("API payload examples", expanded=False):
+    with st.expander("API payload examples v0", expanded=False):
         st.write("### getProducts")
         st.info("{'query':'nike air max 1','location': 'en'}")
         st.write(
